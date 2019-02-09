@@ -10,6 +10,11 @@ namespace DisposePractice
 	{
 		static void Main(string[] args)
 		{
+			using (User u = new User())
+			{
+				u.GetUserData();
+				u.PrintUserData();
+			}
 		}
 	}
 }
