@@ -3,7 +3,7 @@
 This repository is the sample code developed to practice the using statement.
 
 
-### Implement of Dispose pattern
+### Implement of Dispose pattern on unmannaged resource
 
   *	Generate new User class
     ```C#
@@ -35,3 +35,17 @@ This repository is the sample code developed to practice the using statement.
         // Some code	
     }
     ```
+
+### Invoke Dispose() on managed resources
+
+  *	Create a new instance of a managed resource
+    ```C#
+	StreamWriter swriter = new StreamWriter(path + @"\test.txt", true);
+	```
+    and to release this resource:
+    ```C#
+    swriter.Dispose();
+    ```
+
+
+
