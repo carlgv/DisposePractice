@@ -23,6 +23,7 @@ This repository is the sample code developed to practice the using statement.
 	public void Dispose()
 	{
 		Dispose(true);
+		GC.SuppressFinalize(this);
 	}
 	```
 
