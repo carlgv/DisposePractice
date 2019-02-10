@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DisposePractice
 {
-	class Program
+	static class Program
 	{
 		static void Main(string[] args)
 		{
@@ -14,6 +14,7 @@ namespace DisposePractice
 			{
 				u.GetUserData();
 				u.PrintUserData();
+				LogUsersCreated.PrintLogToFile(u);
 			}
 		}
 	}

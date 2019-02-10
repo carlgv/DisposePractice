@@ -7,7 +7,7 @@ namespace DisposePractice
 	/// Class to generate a User, implementing IDisposable
 	/// </summary>
 	/// <see cref="IDisposable"/>
-	public class User: IDisposable
+	public class User : IDisposable, IUser
 	{
 		public Guid Id { get; set; }
 		public string Name { get; private set; }
